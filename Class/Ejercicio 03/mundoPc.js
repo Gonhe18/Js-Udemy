@@ -129,7 +129,35 @@ class Computadora {
   }
 
   toString() {
+
+    return `Id Computadora: ${this._idComputadora} - ${this._nombre}\n${this._monitor}\n${this._raton}\n${this._teclado}`;
+  }
+}
+
+class Orden {
+  static contadorOrdenes = 0;
+
+  constructor() {
+    this._idOrden = ++Orden.contadorOrdenes;
+    this._computadoras = [];
+  }
+
+  getIdOrden() {
+    return this._idOrden;
+  }
+
+  agregarComputadora(computadora) {
+    this._computadoras.push(computadora);
+  }
+
+  mostrarOrden() {
+    let productosOrden = "";
+    for (let pc of this._computadoras) {
+      productosOrden += `${pc.toString()}\n`;
+    }
+    console.log(`Orden n°: ${this._idOrden}\n${productosOrden}`);
     return `Computadora id: ${this._idComputadora} - Nombre: ${this._nombre}\n${this._monitor}\n${this._raton}\n${this._teclado}`;
+
   }
 }
 
@@ -145,4 +173,14 @@ let monitor2 = new Monitor("BGH", "24");
 // Clase Computadora
 let pc1 = new Computadora("AMD", monitor1, raton1, teclado2);
 let pc2 = new Computadora("Intel", monitor2, raton2, teclado1);
-console.log(pc2.toString());
+
+// Clase Orden
+let orden1 = new Orden();
+orden1.agregarComputadora(pc1);
+orden1.agregarComputadora(pc2);
+orden1.mostrarOrden();
+let orden2 = new Orden();
+orden2.agregarComputadora(pc2);
+orden2.mostrarOrden();
+
+
