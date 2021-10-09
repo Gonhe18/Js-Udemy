@@ -7,21 +7,21 @@ class Producto {
     this._precio = precio;
   }
 
-  getIdProducto() {
+  get idProducto() {
     return this._idProducto;
   }
 
-  getNombre() {
+  get nombre() {
     return this._nombre;
   }
-  setNombre() {
+  set nombre() {
     this._nombre = nombre;
   }
 
-  getPrecio() {
+  get precio() {
     return this._precio;
   }
-  setPrecio() {
+  set precio() {
     this._precio = precio;
   }
 
@@ -42,7 +42,7 @@ class Orden {
     this._productos = [];
   }
 
-  getIdOrden() {
+  get idOrden() {
     return this._idOrden;
   }
 

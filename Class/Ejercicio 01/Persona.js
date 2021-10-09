@@ -8,28 +8,28 @@ class Persona {
     this._edad = edad;
   }
 
-  getIdPersona() {
+  get idPersona() {
     return this._idPersona;
   }
 
-  getNombre() {
+  get nombre() {
     return this._nombre;
   }
-  setNombre(nombre) {
+  set nombre(nombre) {
     this._nombre = nombre;
   }
 
-  getApellido() {
+  get apellido() {
     return this._apellido;
   }
-  setApellido(apellido) {
+  set apellido(apellido) {
     this._apellido = apellido;
   }
 
-  getEdad() {
+  get edad() {
     return this._edad;
   }
-  setEdad(edad) {
+  set edad(edad) {
     this._edad = edad;
   }
 
@@ -47,14 +47,14 @@ class Empleado extends Persona {
     this._suedo = sueldo;
   }
 
-  getIdEmpleado() {
+  get idEmpleado() {
     return this._idEmpleado;
   }
 
-  getSueldo() {
+  get sueldo() {
     return this._suedo;
   }
-  setSueldo(sueldo) {
+  set sueldo(sueldo) {
     this._suedo = sueldo;
   }
 
@@ -74,14 +74,14 @@ class Cliente extends Persona {
     this._fechaRegistro = fechaRegistro;
   }
 
-  getIdCliente() {
+  get idCliente() {
     return this._idCliente;
   }
 
-  getFechaRegistro() {
+  get fechaRegistro() {
     return this._fechaRegistro;
   }
-  setFechaRegistro(fechaRegistro) {
+  set fechaRegistro(fechaRegistro) {
     this._fechaRegistro = fechaRegistro;
   }
 
