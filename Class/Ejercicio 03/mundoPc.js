@@ -4,17 +4,17 @@ class DispositivoEntrada {
     this._marca = marca;
   }
 
-  getTipoEntrada() {
+  get tipoEntrada() {
     return this._tipoEntrada;
   }
-  setTipoEntrada(tipoEntrada) {
+  set tipoEntrada(tipoEntrada) {
     this._tipoEntrada = tipoEntrada;
   }
 
-  getMarca() {
+  get marca() {
     return this._marca;
   }
-  setMarca(marca) {
+  set marca(marca) {
     this._marca = marca;
   }
 }
@@ -27,7 +27,7 @@ class Raton extends DispositivoEntrada {
     this._idRaton = ++Raton.contadorRatones;
   }
 
-  getIdRaton() {
+  get idRaton() {
     return this._idRaton;
   }
 
@@ -44,7 +44,7 @@ class Teclado extends DispositivoEntrada {
     this._idTeclado = ++Teclado.contadorTeclados;
   }
 
-  getIdTeclado() {
+  get idTeclado() {
     return this._idTeclado;
   }
 
@@ -62,21 +62,21 @@ class Monitor {
     this._pulgadas = pulgadas;
   }
 
-  getIdMonitor() {
+  get idMonitor() {
     return this._idMonitor;
   }
 
-  getMarca() {
+  get marca() {
     return this._marca;
   }
-  setMarca(marca) {
+  set marca(marca) {
     this._marca = marca;
   }
 
-  getPulgadas() {
+  get pulgadas() {
     return this._pulgadas;
   }
-  setPulgadas(pulgadas) {
+  set pulgadas(pulgadas) {
     this._pulgadas = pulgadas;
   }
 
@@ -96,35 +96,35 @@ class Computadora {
     this._raton = raton;
   }
 
-  getIdComputadora() {
+  get idComputadora() {
     return this._idComputadora;
   }
 
-  getNombre() {
+  get nombre() {
     return this._nombre;
   }
-  setNombre(nombre) {
+  set nombre(nombre) {
     this._nombre = nombre;
   }
 
-  getMonitor() {
+  get monitor() {
     return this._monitor;
   }
-  setMonitor(monitor) {
+  set monitor(monitor) {
     this._monitor = monitor;
   }
 
-  getTeclado() {
+  get teclado() {
     return this._teclado;
   }
-  setTeclado(teclado) {
+  set teclado(teclado) {
     this._teclado = teclado;
   }
 
-  getRaton() {
+  get raton() {
     return this._raton;
   }
-  setRaton(raton) {
+  set raton(raton) {
     this._raton = raton;
   }
 
@@ -142,7 +142,7 @@ class Orden {
     this._computadoras = [];
   }
 
-  getIdOrden() {
+  get idOrden() {
     return this._idOrden;
   }
 
